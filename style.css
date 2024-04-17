@@ -1,1 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&family=Shadows+Into+Light&family=Skranji&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Be Vietnam Pro', san-serif;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.8)),
+        url('./img07.jpg') no-repeat center;
+    background-size: cover;
+    color: orangered;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: #121212;
+    box-shadow: 0 2px 16px #f5f5dc3d;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.toggleBtn {
+    font-size: 1.5rem;
+    color: orangered;
+    background: transparent;
+    border: none;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.toggleBtn:hover {
+    transform: rotate(180deg);
+}
+
+.links {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3 linear;
+}
+
+.links a {
+    color: orangered;
+    display: block;
+    padding: 0.5rem 1 rem;
+    transition: all 0.3s linear;
+}
